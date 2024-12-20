@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES Ambiental - Equipe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: linear-gradient(to bottom, #8df69c, #6b2f8d);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #8df69c;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 70px;
+            display: block;
+            background-color: #8df69c;
+            border: 1px solid #6b2f8d;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f4f4f9;
+        }
+
+        /* Seções centrais */
+        .container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #333;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        h2 {
+            animation-delay: 0.8s;
+        }
+
+        h4, h5 {
+            margin: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        h4 {
+            margin-top: 5px;
+            animation-delay: 0.8s;
+        }
+        h5 {
+            margin-top: 2px;
+            margin-bottom: 15px;
+            animation-delay: 0.8s;
+        }
+
+        .main p {
+            text-align: justify
+        }
+
+        .custom-link a {
+            text-decoration: none;
+            color: black
+        }
+        
+        i {
+            color: gray;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to right, #8df69c, #6b2f8d);
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        /* Imagens da Equipe */
+        .team-image img{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 5px solid #41026a;
+            margin-top: 10px;
+            margin-bottom: 0 auto 10px auto;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 85px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            text-align: center;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./images/NES - Círculo.png" alt="Logo NES Ambiental">
+        </div>
+        <div> <b>NES Ambiental</b> </div>
+        <nav>
+            <a href="apresentacao.html">Home</a>
+            <a href="funcionalidades.html">Funcionalidade</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="section">
+            <h1>Quem somos?</h1>
+            <div class="main">
+                <p>Nós somos alunos do programa <b>Novo Ensino Suplementar (NES)</b>, vinculado
+                    à Universidade Federal de Alagoas (UFAL). Nosso programa é voltado
+                    para o aprofundamento em <b>matemática e programação</b>, com foco em 
+                    desenvolver habilidades práticas e teóricas nessas áreas.
+                    <br>
+                    Este site foi criado como parte do trabalho de conclusão da 
+                    disciplina "Prática e Pesquisa" de 2024, que explora conceitos
+                    de programação utilizando Python, HTML e CSS. Nosso objetivo é
+                    aplicar o conhecimento adquirido ao longo do curso, apresentando
+                    um projeto com um certo nível de <b>importância social</b> que une 
+                    criatividade, tecnologia e aprendizado.
+                </p>
+                <p>
+                    Para saber mais sobre o NES, <a href="https://sites.google.com/view/nes-alagoas/home">clique aqui</a>
+                    para acessar o site oficial do Novo Ensino Suplementar.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h1>Nossa equipe:</h1>
+        </section>
+
+        <!-- Fotos da equipe -->
+        <section class="section">
+
+            <div class="team">
+
+                <div class="member">
+                    <div class="team-image">
+                        <img src="./images/João Pedro.png"></img>
+                    </div>
+                    <h4>João Pedro Pacheco Santos</h4>
+                    <h5>Estudante do NES (Módulo IV) e do 2º ano do Ensino Médio<br>Responsável pelo banco de dados e seu interpretador para<br> a filtragem de pesquisas na página de funcionalidades.</h5>
+                </div>
+
+                <div class="member">
+                    <div class="team-image">
+                        <img src="./images/Pietro Bezerra.png"></img>
+                    </div>
+                    <h4>Pietro Bezerra dos Santos</h4>
+                    <h5>Estudante do NES (Módulo II) e do 1º ano do Ensino Médio<br>Responsável por ajudar no debug da base de dados e <br>apresentação no meet.</h5>
+                </div>
+
+                <div class="member">
+                    <div class="team-image">
+                        <img src="./images/Rodrigo Levino.png"></img>
+                    </div>
+                    <h4>Rodrigo Chagas Tenório Levino</h4>
+                    <h5>Estudante do NES (Módulo II) e do 9º ano do Ensino Fundamental<br>Responsável pela criação da aba “Funcionalidades”.</h5>
+                </div>
+
+                <div class="member">
+                    <div class="team-image">
+                        <img src="./images/Ruan Gois.png"></img>
+                    </div>
+                    <h4>Ruan Mateus dos Santos Gois</h4>
+                    <h5>Estudante do NES (Módulo II) e do 1º ano do Ensino Médio<br>Responsável pela criação desta aba de Apresentação da equipe.</h5>
+                </div>
+
+                <div class="member">
+                    <div class="team-image">
+                        <img src="./images/Gustavo Lima.png"></img>
+                    </div>
+                    <h4>Gustavo Lima Felipe</h4>
+                    <h5>Estudante do NES (Módulo II) e do 9º ano do Ensino Fundamental<br>Responsável pela criação do nome do site, do layout das páginas <br>e da estrutura da aba "Home".</h5>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h1>Informações para contato: </h1>
+            <div class="custom-link">
+            <p><a href="https://instagram.com/nes-ufal">
+                <i class="fab fa-instagram"></i>
+            </a>
+                <a href="https://www.instagram.com/nes.ufal">www.instagram.com/nes.ufal</a>
+            </p>
+
+            <p><a href="https://nes.alagoas@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+                <a href="https://nes.alagoas@gmail.com">nes.alagoas@gmail.com</a>
+            </div>
+            </p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 NES Ambiental | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
