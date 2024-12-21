@@ -27,6 +27,8 @@ data = data.dropna()
 def index():
     return render_template('index.html')
 
+
+
 @app.route('/plot', methods=['POST'])
 def plot():
     # Obter as datas fornecidas pelo usuário
